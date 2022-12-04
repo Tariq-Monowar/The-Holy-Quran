@@ -1,0 +1,321 @@
+
+/*---------------------Nav Bar-----------------*/
+.navigation-Bar{
+  height: 10vh;
+  background-color: #adadad9d;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  
+}
+/*--------------nav Logo--------------*/
+.page-logo{
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #00495c;
+}
+
+/*---------------Language Change----------------*/
+.nav-element{
+  margin: 0px 20px; 
+}
+.nav-element{
+  display: inline-block;
+  border: 1px rgba(0, 3, 15, 0.116);
+}
+.nav-element .element{
+  width: 130px;
+  font-size: 17px;
+  padding: 2px 3px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: bolder;
+  margin: 0px 10px 3px 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 5px;
+}
+
+/*---------------------Header-------------------*/
+.header-section{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*---------------Animation Title--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.205));
+  font-size: 40px;
+  margin: 30px 0px 0px 0px;
+}
+
+.waviy span {
+font-family: 'Lobster', cursive;
+  position: relative;
+  display: inline-block;
+  animation: waviy 1.2s infinite;
+  animation-delay: calc(.1s * var(--i));
+  letter-spacing: -2px;
+  color: #161616;
+  margin-bottom: 0px;
+  
+}
+@keyframes waviy {
+  0%,50%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.space{
+    padding-right: 10px;
+}
+
+/*-----------description----------*/
+.description-box{
+  max-width: 500px;
+}
+.description-box p{
+  padding: 0px 30px;
+}
+/*-----------SearchBar------------*/
+.searchBar{
+  display: flex;
+}
+.searchBar input{
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 4px 5px 5px 7px;
+  margin: 0px 0px 30px 0px;
+  border-radius: 10px;
+  border: 1px solid rgba(65, 65, 65, 0.877);
+}
+.searchBar .icon{
+  font-size: 20px;
+  margin-left: -33px;
+  padding: 5px 5px 3px 5px;
+  font-weight: bold;
+  transform: rotate(80deg);
+  color: #1616169a;
+
+}
+     
+     
+
+/*--------------------------section-------------------*/
+section{
+    display: grid;
+    grid-gap: 10px;
+    /* grid-auto-columns: 1fr; */
+}
+.CardLink{
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+
+.CardLink:hover{
+  transform: scale(1.03);
+}
+.CardLink:hover .ayat-number{
+  transition: .3s;
+  background-color: #003253a9;
+  color: #fff;
+}
+.CardLink:hover .blogs{
+  background-color: rgba(212, 212, 212, 0.897);
+  box-shadow: 3px 4px 13px 0px #0000006e;
+}
+.CardLink:hover .sura-name{
+  color: #003253a9;
+}
+.CardLink:hover .ayat-arabic-name{
+  color: #043d61c4;
+}
+
+.blogs{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:5px;
+  border: 1px solid #dbdbdbe8;
+  padding-bottom: 5px;
+  background-color: rgba(212, 212, 212, 0.699);
+  margin: 10px;
+  box-shadow: 1px 3px 9px 1px #00000057;
+} 
+.inner-blogs-left{
+  display: flex;
+}
+.ayat-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  margin: 15px 17px 0px 20px;
+  background: #dbdbdbe8;
+}
+.ayat-number p{
+  transform: rotate(-45deg);
+  font-weight: bolder;
+  font-size: 20px;     
+}
+.sura-name{
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 0.9;
+  font-weight: bold;
+}
+.sura-translation-name{
+  font-size: 10px;
+  font-weight: bolder;
+  color: rgb(92, 92, 92);
+}
+.ayat-arabic-name{
+  font-family: 'Lobster', cursive;
+  margin-right: 10px;
+  font-weight: bolder;
+  line-height: 0.7;
+  text-align: center;
+}
+.total-ayat-number{
+  font-size: 10px;
+  font-weight: bolder;
+  color: rgb(92, 92, 92);
+}
+
+@media screen and (min-width: 600px) {
+    section{
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+    }
+    article{
+      margin: 0px 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section{
+        grid-template-columns: auto auto auto;
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 520px) {
+    .blogs{
+      margin:0px 5px;
+      box-shadow: 2px 5px 8px 0px #00000057;
+    }
+    .blogs:hover{
+      box-shadow: 2px 5px 8px 0px #00000057;
+    }
+    .searchBar input{
+      height: 35px;
+    }
+    .searchBar .icon{
+     padding-top: 20px;
+    }
+}
+
+
+/*------------Lidding Component-----------*/
+/*----------Animation hr-------------*/
+.LoddingSet{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  
+}
+.animation-hr{
+    width: 340px;
+    margin: 0px auto;
+}
+.hr1{
+    animation: hr1 2s ease infinite;
+}
+@keyframes hr1 {
+     0% {
+       width: 15%;
+     }
+     50% {
+       width: 100%;
+     }
+     100% {
+       width: 15%;
+     }
+
+}
+
+.hr2{
+    animation: hr2 2s ease infinite;
+}
+@keyframes hr2 {
+     0% {
+       width: 100%;
+     }
+     50% {
+       width: 15%;
+     }
+     100% {
+       width: 100%;
+     }
+
+}
+.hr3{
+    margin-left: auto;
+    animation: hr3 2s ease infinite;
+}
+@keyframes hr3 {
+    0% {
+       width: 100%;
+     }
+     50% {
+       width: 15%;
+     }
+     100% {
+       width: 100%;
+     }
+
+}
+.hr4{
+    margin-left:  auto;
+    animation: hr4 2s ease infinite;
+}
+@keyframes hr4 {
+     0% {
+       width: 15%;
+     }
+     50% {
+       width: 100%;
+     }
+     100% {
+       width: 15%;
+     }
+
+}
+.animation-hr hr{
+    height: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right top,#d9d5d58c, #021b2873, #679bb5e0, #878787a6, #e1e1e1c2);
+    opacity: 100;
+    margin-bottom: 3px;
+    margin-top: 6px;
+    border: none;
+}

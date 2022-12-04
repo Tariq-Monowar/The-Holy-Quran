@@ -1,0 +1,127 @@
+
+.quranPageBody{
+    /* background-color: #dadada; */
+}
+.pageContainer{
+    width: 70%;
+    background-color: #fff;
+    margin: 0px auto;
+    border-radius: 10px;  
+}
+/*------------Navigation-------------*/
+ .navigation{
+    font-family: 'Amiri', serif;
+    height: 10vh;
+    background-color: #adadad9d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-element{
+  margin: 0px 20px; 
+}
+.elements{ 
+  width: 78px;
+  font-size: 15px;
+  padding: 2px 3px;
+  border-radius: 10px;
+  margin: 0px 10px 3px 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.SuraName{
+    font-weight: 400;
+    font-size: 40px;
+}
+.suraNameStyle{
+     font-size: 20px;
+}
+.GotoHome{
+    margin: 0px 20px;
+    font-size: 30px;
+    color: rgba(42, 42, 43, 0.76);
+    transition: .3s;
+}
+.GotoHome:hover{
+    color: #043d61c4;;
+}
+
+
+.ayatBlog{
+    border-radius: 10px;
+    background-color: #d4d4d4b2;
+    box-shadow: 0px 2px 7px 1px #00000057;
+    padding: 10px 25px;
+    margin: 10px 10px;
+    transition: .3s;
+    line-height: 2.5;
+}
+.ayatBlog:hover{
+   background-color: rgba(212, 212, 212, 0.897);
+  box-shadow: 0px 2px 7px 1px #00000057;
+   transform: scale(1.02);
+}
+.ayatArabic{
+    font-family: 'Amiri', serif;
+    font-size: 30px; 
+    color: rgb(0, 0, 0);  
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+.ayatTranslation{
+    line-height: 1.9;
+    font-family: 'Amiri', serif;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+.ArabicAyatNumbers{
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 600;
+}
+.AyatNumberID{
+    font-weight: bold;
+}
+@media screen and (min-width: 992px) {
+    .pageContainer{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pageContainer{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pageContainer{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .pageContainer{
+        width: 100%;
+    }
+    .ayatBlog{ 
+        box-shadow: 1px 3px 5px 2px #00000040;
+        padding: 10px 15px;
+        margin: 10px 10px;
+    }
+    .ayatArabic{
+        font-size: 25px;
+    } 
+    .ayatTranslation{
+        font-size: 16px;
+    } 
+    .SuraName{
+        font-size: 23px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
